@@ -1,0 +1,268 @@
+@import 'color.scss';
+
+html {
+  overflow-x: hidden;
+}
+body {
+  .banner {
+    position: relative;
+    padding-bottom: 4rem !important;
+    .banner-img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+    }
+    .logo-menu  {
+      background: $gray-10;
+      width: 10rem;
+      height: 10rem;
+      border-bottom-right-radius: 55rem;
+      padding-left: 1.5rem;
+      padding-top: 1.5rem;
+      margin-left: -1rem;
+      img {
+        width: 5rem;
+      }
+    }
+  
+    h1 {
+      font-size: 4.5rem;
+      line-height: 4rem;
+      span {
+        color: $gray-light;
+      }
+    }
+    ul {
+      padding-left: 0;
+      p {
+        font-weight: bold;
+      }
+      li {
+        margin-left: 1rem;
+      }
+    }
+    .contact-banner {
+      display: flex;
+      button {
+        background: $green-light;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: .5rem;
+        color: white;
+      }
+      i {
+        font-size: 2.5rem;
+        margin-left: 1rem;
+        color: $gray-10;
+      }
+    }
+    .skill-icons {
+      width: 68vw;
+      background: $gray-20;
+      display: flex;
+      position: absolute;
+      bottom: -3rem;
+      align-items: center;
+      justify-content: center;
+      border-top-right-radius: .5rem;
+      border-bottom-right-radius: .5rem;
+      ul{
+      align-items: center;
+      display: flex;
+      list-style: none;
+      margin-left: auto;
+      margin-bottom: 0;
+      padding: .5rem;
+      // flex-wrap: wrap;
+      overflow: scroll;
+      z-index: 99;
+      li {
+        img {
+          max-width: 4.5rem;
+          max-height: 4.5rem;
+        }
+      }
+      }
+    }
+  }
+  .figma-projects {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    background-color: $gray-10;
+    background-image: url('img/bkg-2.svg');
+    background-size: 100% 100%;
+    h2 {
+      color: white;
+      font-family: "Jost" serif;
+      font-weight: 100;
+      color: $gray-light;
+      letter-spacing: .1rem;
+      font-size: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 2.7rem;
+        filter: brightness(.7);
+        margin-right: 1rem;
+      }
+    }
+    .figma-sub {
+      color: white;
+      font-weight: 100;
+      font-size: 1rem;
+      max-width: 500px;
+      text-align: center;
+      margin: 0 auto;
+    }
+    .figma-project-img {
+      padding: 2rem;
+    }
+    .figma-project-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      >div {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        h3 {
+          color: white;
+          font-weight: 100;
+          letter-spacing: .1rem;
+          font-size: 1.9rem;
+          margin-bottom: 0;
+        }
+        p {
+          color: $gray-30;
+          font-weight: 100;
+          font-size: 1.3rem;
+        }
+        a {
+          margin-left: auto;
+          color: $green-light;
+          transition: .5s;
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+    .more-figma {
+      padding-top: 3rem;
+      h2 {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        span {
+          font-size: 1.5rem;
+          color: $gray-30;
+        }
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        list-style: none;
+        li {
+          a {
+            color: $gray-30;
+            font-weight: 100;
+            font-size: 1.4rem;
+            &:hover {
+              color: $green-light;
+            }
+          }
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .frontend-project {
+      padding-top: 8rem;
+      h2 {
+        margin-bottom: 6rem;
+      }
+      .col-md-3 {
+        margin-bottom: 1rem;
+        transition: .5s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      a {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .footer {
+    background: black;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+      color: white;
+    }
+    img {
+      width: 4rem;
+    }
+  }
+}
+@media screen and(max-width: 1200px) {
+  body {
+    .banner {
+      .skill-icons {
+        width: fit-content;
+      }
+    }
+  } 
+}
+@media screen and(max-width: 825px) {
+  .skill-icons {
+    position: relative;
+  }
+}
+@media screen and(max-width: 768px) {
+  .title-img {
+    flex-direction: column;
+  }
+  .banner-img {
+    display: none;
+  }
+  .figma-projects {
+    .row {
+      margin-top: 5rem;
+      &:nth-child(even) {
+        flex-direction: column-reverse;
+      }
+    }
+    .frontend-project {
+      .row {
+        flex-direction: row;
+      }
+    }
+  }
+  .more-figma {
+    h2 {
+      text-align: center;
+      span {
+        text-align: center;
+      }
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center !important;
+      padding-left: 0;
+      li {
+        padding: .3rem 1rem;
+      }
+    }
+  }
+}

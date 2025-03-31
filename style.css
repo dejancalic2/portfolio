@@ -1,0 +1,358 @@
+html {
+  overflow-x: hidden;
+}
+
+body .banner {
+  position: relative;
+  padding-bottom: 4rem !important;
+}
+
+body .banner .banner-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+body .banner .logo-menu {
+  background: #313131;
+  width: 10rem;
+  height: 10rem;
+  border-bottom-right-radius: 55rem;
+  padding-left: 1.5rem;
+  padding-top: 1.5rem;
+  margin-left: -1rem;
+}
+
+body .banner .logo-menu img {
+  width: 5rem;
+}
+
+body .banner h1 {
+  font-size: 4.5rem;
+  line-height: 4rem;
+}
+
+body .banner h1 span {
+  color: #858585;
+}
+
+body .banner ul {
+  padding-left: 0;
+}
+
+body .banner ul p {
+  font-weight: bold;
+}
+
+body .banner ul li {
+  margin-left: 1rem;
+}
+
+body .banner .contact-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .banner .contact-banner button {
+  background: #12BF00;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: .5rem;
+  color: white;
+}
+
+body .banner .contact-banner i {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  color: #313131;
+}
+
+body .banner .skill-icons {
+  width: 68vw;
+  background: #484848;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: -3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
+body .banner .skill-icons ul {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  margin-bottom: 0;
+  padding: .5rem;
+  overflow: scroll;
+  z-index: 99;
+}
+
+body .banner .skill-icons ul li img {
+  max-width: 4.5rem;
+  max-height: 4.5rem;
+}
+
+body .figma-projects {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+  background-color: #313131;
+  background-image: url("img/bkg-2.svg");
+  background-size: 100% 100%;
+}
+
+body .figma-projects h2 {
+  color: white;
+  font-family: "Jost" serif;
+  font-weight: 100;
+  color: #858585;
+  letter-spacing: .1rem;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .figma-projects h2 img {
+  width: 2.7rem;
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+  margin-right: 1rem;
+}
+
+body .figma-projects .figma-sub {
+  color: white;
+  font-weight: 100;
+  font-size: 1rem;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+body .figma-projects .figma-project-img {
+  padding: 2rem;
+}
+
+body .figma-projects .figma-project-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .figma-projects .figma-project-text > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body .figma-projects .figma-project-text > div h3 {
+  color: white;
+  font-weight: 100;
+  letter-spacing: .1rem;
+  font-size: 1.9rem;
+  margin-bottom: 0;
+}
+
+body .figma-projects .figma-project-text > div p {
+  color: #ababab;
+  font-weight: 100;
+  font-size: 1.3rem;
+}
+
+body .figma-projects .figma-project-text > div a {
+  margin-left: auto;
+  color: #12BF00;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body .figma-projects .figma-project-text > div a:hover {
+  color: white;
+}
+
+body .figma-projects .more-figma {
+  padding-top: 3rem;
+}
+
+body .figma-projects .more-figma h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+body .figma-projects .more-figma h2 span {
+  font-size: 1.5rem;
+  color: #ababab;
+}
+
+body .figma-projects .more-figma ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  list-style: none;
+}
+
+body .figma-projects .more-figma ul li a {
+  color: #ababab;
+  font-weight: 100;
+  font-size: 1.4rem;
+}
+
+body .figma-projects .more-figma ul li a:hover {
+  color: #12BF00;
+}
+
+body .figma-projects .more-figma img {
+  width: 100%;
+}
+
+body .figma-projects .frontend-project {
+  padding-top: 8rem;
+}
+
+body .figma-projects .frontend-project h2 {
+  margin-bottom: 6rem;
+}
+
+body .figma-projects .frontend-project .col-md-3 {
+  margin-bottom: 1rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+body .figma-projects .frontend-project .col-md-3:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .figma-projects .frontend-project a img {
+  width: 100%;
+}
+
+body .footer {
+  background: black;
+  padding: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .footer p {
+  color: white;
+}
+
+body .footer img {
+  width: 4rem;
+}
+
+@media screen and (max-width: 1200px) {
+  body .banner .skill-icons {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .skill-icons {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title-img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .banner-img {
+    display: none;
+  }
+  .figma-projects .row {
+    margin-top: 5rem;
+  }
+  .figma-projects .row:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .figma-projects .frontend-project .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .more-figma h2 {
+    text-align: center;
+  }
+  .more-figma h2 span {
+    text-align: center;
+  }
+  .more-figma ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    padding-left: 0;
+  }
+  .more-figma ul li {
+    padding: .3rem 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
